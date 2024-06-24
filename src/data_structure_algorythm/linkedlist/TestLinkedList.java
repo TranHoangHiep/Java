@@ -10,11 +10,11 @@ public class TestLinkedList {
         linkedList.getLength();
 
         linkedList.append(5);
-        System.out.println("Linked list after appending 5: ");
+        System.out.println("---> Linked list after appending 5: ");
         linkedList.printLinkedList();
 
-        linkedList.removeLast();
-        System.out.println("Linked list after removing last: ");
+        System.out.println("---> Removing last element " + linkedList.removeLast().value + " from linked list ");
+        System.out.println("---> Linked list after removing last: ");
         linkedList.printLinkedList();
 
     }
