@@ -32,5 +32,9 @@ public class TestLinkedList {
         linkedList.set(0, 5);
         linkedList.printLinkedList();
 
+        System.out.println("---> Linked list after set item with index 1 with value 6: ");
+        linkedList.insert(1, 6);
+        linkedList.printLinkedList();
+
     }
 }
