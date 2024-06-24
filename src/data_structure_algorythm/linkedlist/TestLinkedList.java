@@ -21,5 +21,9 @@ public class TestLinkedList {
         System.out.println("---> Linked list after prepending 3: ");
         linkedList.printLinkedList();
 
+        System.out.println("---> Removing first element " + linkedList.removeFirst().value + " from linked list ");
+        System.out.println("---> Linked list after removing first: ");
+        linkedList.printLinkedList();
+
     }
 }
