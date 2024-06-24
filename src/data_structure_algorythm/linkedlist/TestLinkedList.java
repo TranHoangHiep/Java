@@ -36,5 +36,9 @@ public class TestLinkedList {
         linkedList.insert(1, 6);
         linkedList.printLinkedList();
 
+        System.out.println("---> Removing element " + linkedList.remove(1).value + " from linked list ");
+        System.out.println("---> Linked list after removing: ");
+        linkedList.printLinkedList();
+
     }
 }
