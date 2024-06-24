@@ -25,5 +25,7 @@ public class TestLinkedList {
         System.out.println("---> Linked list after removing first: ");
         linkedList.printLinkedList();
 
+        System.out.println("---> Get element with index 0 is: " + linkedList.get(0).value + " from linked list ");
+
     }
 }
