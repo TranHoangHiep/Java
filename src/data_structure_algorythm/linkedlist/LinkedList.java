@@ -158,16 +158,30 @@ public class LinkedList {
 	    }
 	}
 
+    // Check cycle linkedlist
     public boolean hasLoop() {
+        if (head == null || tail == null || head == tail) return false;
         Node fast = head;
         Node slow = head;
-        if (head == null || tail == null || head == tail) return false;
         while(fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
             if(fast == slow) return true;
         }
         return false;
+    }
+
+    // get middle item
+    public Node findMiddleNode() {
+        Node fast = head;
+        Node slow = head;
+        if (head == null || tail == null) return null;
+        if (head == tail) return head;
+        while(fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 
 }
