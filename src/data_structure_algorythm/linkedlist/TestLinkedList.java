@@ -17,5 +17,9 @@ public class TestLinkedList {
         System.out.println("---> Linked list after removing last: ");
         linkedList.printLinkedList();
 
+        linkedList.prepend(3);
+        System.out.println("---> Linked list after prepending 3: ");
+        linkedList.printLinkedList();
+
     }
 }
