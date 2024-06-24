@@ -27,5 +27,10 @@ public class TestLinkedList {
 
         System.out.println("---> Get element with index 0 is: " + linkedList.get(0).value + " from linked list ");
 
+        
+        System.out.println("---> Linked list after set item with index 0 with value 5: ");
+        linkedList.set(0, 5);
+        linkedList.printLinkedList();
+
     }
 }
