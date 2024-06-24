@@ -40,5 +40,18 @@ public class TestLinkedList {
         System.out.println("---> Linked list after removing: ");
         linkedList.printLinkedList();
 
+        linkedList.append(6);
+        linkedList.append(7);
+        linkedList.append(8);
+        linkedList.append(9);
+        System.out.println("---> Linked list before reverse ");
+        linkedList.printLinkedList();
+
+        linkedList.reverse();
+        System.out.println("---> Linked list after reverse ");
+        linkedList.printLinkedList();
+
+
+
     }
 }
