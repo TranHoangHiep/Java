@@ -9,5 +9,8 @@ public class TestLinkedList {
         linkedList.getTail();
         linkedList.getLength();
 
+        linkedList.append(5);
+        linkedList.printLinkedList();
+
     }
 }
