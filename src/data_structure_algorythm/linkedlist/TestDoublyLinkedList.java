@@ -19,5 +19,8 @@ public class TestDoublyLinkedList {
         System.out.println("---> DoublyLinkedList after prepend");
         doublyLinkedList.prepend(4);
         doublyLinkedList.printLinkedList();
+
+        System.out.println("---> DoublyLinkedList remove first item: " + doublyLinkedList.removeFirst().value);
+        doublyLinkedList.printLinkedList();
     }
 }
