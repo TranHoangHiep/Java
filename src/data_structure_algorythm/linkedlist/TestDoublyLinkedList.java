@@ -24,5 +24,9 @@ public class TestDoublyLinkedList {
         doublyLinkedList.printLinkedList();
 
         System.out.println("---> DoublyLinkedList get item with index 0 is: " + doublyLinkedList.get(1).value);
+
+        System.out.println("---> DoublyLinkedList after set item 0 to 6");
+        doublyLinkedList.set(0, 6);
+        doublyLinkedList.printLinkedList();
     }
 }
