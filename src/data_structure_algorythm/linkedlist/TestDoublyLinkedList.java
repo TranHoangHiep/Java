@@ -22,5 +22,7 @@ public class TestDoublyLinkedList {
 
         System.out.println("---> DoublyLinkedList remove first item: " + doublyLinkedList.removeFirst().value);
         doublyLinkedList.printLinkedList();
+
+        System.out.println("---> DoublyLinkedList get item with index 0 is: " + doublyLinkedList.get(1).value);
     }
 }
