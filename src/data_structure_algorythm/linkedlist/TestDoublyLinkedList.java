@@ -8,5 +8,9 @@ public class TestDoublyLinkedList {
         doublyLinkedList.getHead();
         doublyLinkedList.getTail();
         doublyLinkedList.getLength();
+
+        System.out.println("---> DoublyLinkedList after append");
+        doublyLinkedList.append(6);
+        doublyLinkedList.printLinkedList();
     }
 }
