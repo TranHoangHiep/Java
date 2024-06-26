@@ -145,4 +145,46 @@ public class DoublyLinkedList {
         length++;
         return true;
     }
+
+    public Node remove(int index) {
+        if (index < 0 || index >= length) return null;
+        if (index == 0) return removeFirst();
+        if (index == length - 1) return removeLast();
+
+        Node temp = get(index);
+        Node before = temp.prev;
+        Node after = temp.next;
+        before.next = after;
+        after.prev = before;
+        temp.next = null;
+        temp.prev = null;
+        length--;
+        return temp;
+    }
+
+    public void reverse() {
+        Node current = head;
+        Node temp = null;
+        while(current != null) {
+            temp = current.prev;
+            current.prev = current.next;
+            current.next = temp;
+            current = current.prev;
+        }
+        temp = head;
+        head = tail;
+        tail = temp;
+    }
+
+    public boolean isPalindrome() {
+        if (length <= 1) return true;
+        Node before = head;
+        Node after = tail;
+        for(int i = 0; i < length / 2; i++) {
+            if(before.value != after.value) return false;
+            before = before.next;
+            after = after.prev;
+        }
+        return true;
+    }
 }
