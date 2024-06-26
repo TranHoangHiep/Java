@@ -29,12 +29,16 @@ public class TestDoublyLinkedList {
         doublyLinkedList.set(0, 6);
         doublyLinkedList.printLinkedList();
 
-        System.out.println("---> DoublyLinkedList add two more itemw");
+        System.out.println("---> DoublyLinkedList add two more item");
         doublyLinkedList.append(7);
         doublyLinkedList.append(8);
         doublyLinkedList.printLinkedList();
         System.out.println("---> DoublyLinkedList after insert index 1 with value 9");
         doublyLinkedList.insert(1, 9);
+        doublyLinkedList.printLinkedList();
+
+        System.out.println("---> DoublyLinkedList after remove index 1");
+        doublyLinkedList.remove(1);
         doublyLinkedList.printLinkedList();
     }
 }
