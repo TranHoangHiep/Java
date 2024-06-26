@@ -40,5 +40,9 @@ public class TestDoublyLinkedList {
         System.out.println("---> DoublyLinkedList after remove index 1");
         doublyLinkedList.remove(1);
         doublyLinkedList.printLinkedList();
+
+        System.out.println("---> DoublyLinkedList after reverse");
+        doublyLinkedList.reverse();
+        doublyLinkedList.printLinkedList();
     }
 }
