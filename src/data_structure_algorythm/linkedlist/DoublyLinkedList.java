@@ -175,4 +175,16 @@ public class DoublyLinkedList {
         head = tail;
         tail = temp;
     }
+
+    public boolean isPalindrome() {
+        if (length <= 1) return true;
+        Node before = head;
+        Node after = tail;
+        for(int i = 0; i < length / 2; i++) {
+            if(before.value != after.value) return false;
+            before = before.next;
+            after = after.prev;
+        }
+        return true;
+    }
 }
