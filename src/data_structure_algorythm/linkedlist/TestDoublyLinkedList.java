@@ -28,5 +28,13 @@ public class TestDoublyLinkedList {
         System.out.println("---> DoublyLinkedList after set item 0 to 6");
         doublyLinkedList.set(0, 6);
         doublyLinkedList.printLinkedList();
+
+        System.out.println("---> DoublyLinkedList add two more itemw");
+        doublyLinkedList.append(7);
+        doublyLinkedList.append(8);
+        doublyLinkedList.printLinkedList();
+        System.out.println("---> DoublyLinkedList after insert index 1 with value 9");
+        doublyLinkedList.insert(1, 9);
+        doublyLinkedList.printLinkedList();
     }
 }
