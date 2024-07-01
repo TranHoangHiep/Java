@@ -13,5 +13,9 @@ public class TestStack {
         stack.push(5);
         System.out.println("---> Stack after pushing 5: ");
         stack.printStack();
+
+        stack.pop();
+        System.out.println("---> Stack after poping: ");
+        stack.printStack();
     }
 }
