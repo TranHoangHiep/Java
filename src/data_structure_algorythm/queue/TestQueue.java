@@ -14,5 +14,8 @@ public class TestQueue {
         queue.enqueue(5);
         System.out.println("---> Queue after enqueue 5: ");
         queue.printQueue();
+
+        System.out.println("---> Queue after dequeue " + queue.dequeue().value);
+        queue.printQueue();
     }
 }
