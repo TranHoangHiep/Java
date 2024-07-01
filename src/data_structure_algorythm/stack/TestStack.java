@@ -10,5 +10,8 @@ public class TestStack {
         stack.getTop();
         stack.getHeight();
 
+        stack.push(5);
+        System.out.println("---> Stack after pushing 5: ");
+        stack.printStack();
     }
 }
