@@ -10,5 +10,9 @@ public class TestQueue {
         queue.getFirst();
         queue.getLast();
         queue.getLength();
+
+        queue.enqueue(5);
+        System.out.println("---> Queue after enqueue 5: ");
+        queue.printQueue();
     }
 }
