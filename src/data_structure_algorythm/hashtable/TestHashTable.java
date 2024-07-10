@@ -5,5 +5,11 @@ public class TestHashTable {
         HashTable myHashTable = new HashTable();
 
         myHashTable.printTable();
+
+        System.out.println("---> HashTable after adding 2 new nodes");
+        myHashTable.set("nails", 100);
+        myHashTable.set("tile", 50);
+        myHashTable.printTable();
+
     }
 }
