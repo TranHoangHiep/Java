@@ -11,5 +11,6 @@ public class TestHashTable {
         myHashTable.set("tile", 50);
         myHashTable.printTable();
 
+        System.out.println("---> Get key 'nails' from hash table " +  myHashTable.get("nails"));
     }
 }
