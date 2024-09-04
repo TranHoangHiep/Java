@@ -42,4 +42,19 @@ public class Main {
             [75, 60, 65, 55, 50]
          */
     }
+
+    public static int findKthSmallest(int[] nums, int k) {
+        Heap maxHeap = new Heap();
+ 
+        for (int num : nums) {
+            System.out.println("insert: " + num);
+            maxHeap.insert(num);
+            if (maxHeap.getHeap().size() > k) {
+                System.out.println(maxHeap.remove());
+                // maxHeap.remove();
+            }
+        }
+        System.out.println(maxHeap.getHeap());
+        return maxHeap.remove();
+    }
 }
