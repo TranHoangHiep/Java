@@ -1,5 +1,9 @@
 package data_structure_algorythm.binary_search_tree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinarySearchTree {
     class Node {
         int value;
@@ -65,5 +69,25 @@ public class BinarySearchTree {
         }
 
         return currentNode;
+    }
+
+    public ArrayList<Integer> bfs() {
+        Node currentNode = root;
+        Queue<Node> queue = new LinkedList<>();
+        ArrayList<Integer> result = new ArrayList<>();
+        if (currentNode == null) return result;
+
+        queue.add(currentNode);
+        while(queue.size() > 0) {
+            currentNode = queue.remove();
+            result.add(currentNode.value);
+            if (currentNode.left != null) {
+                queue.add(currentNode.left);
+            }
+            if (currentNode.right != null) {
+                queue.add(currentNode.right);
+            }
+        }
+        return result;
     }
 }
