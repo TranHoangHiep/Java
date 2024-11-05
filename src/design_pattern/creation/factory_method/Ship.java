@@ -1,4 +1,4 @@
-package design_pattern.factory_method;
+package design_pattern.creation.factory_method;
 
 public class Ship implements Transport{
 

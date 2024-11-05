@@ -1,4 +1,4 @@
-package design_pattern.strategy;
+package design_pattern.behavior.strategy;
 
 public class OperationManager {
     private Strategy strategy;

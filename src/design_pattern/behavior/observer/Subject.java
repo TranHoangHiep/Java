@@ -1,4 +1,4 @@
-package design_pattern.observer;
+package design_pattern.behavior.observer;
 
 public interface Subject {
     void addObserver(Observer observer);

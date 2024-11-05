@@ -1,6 +1,6 @@
-import design_pattern.factory_method.Logistics;
-import design_pattern.factory_method.RoadLogistics;
-import design_pattern.factory_method.SeaLogistics;
+import design_pattern.creation.factory_method.Logistics;
+import design_pattern.creation.factory_method.RoadLogistics;
+import design_pattern.creation.factory_method.SeaLogistics;
 
 public class Main {
 
