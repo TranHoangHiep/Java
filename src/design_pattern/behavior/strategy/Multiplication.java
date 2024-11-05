@@ -1,4 +1,4 @@
-package design_pattern.strategy;
+package design_pattern.behavior.strategy;
 
 public class Multiplication implements Strategy {
     @Override

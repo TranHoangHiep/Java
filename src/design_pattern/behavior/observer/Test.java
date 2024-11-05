@@ -1,4 +1,4 @@
-package design_pattern.observer;
+package design_pattern.behavior.observer;
 
 public class Test {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package design_pattern.prototype;
+package design_pattern.creation.prototype;
 
 public abstract class Shape {
 
