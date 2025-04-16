@@ -1,23 +1,20 @@
-package data_structure_algorythm.hashtable;
+package data_structure_algorythm.hashtable.leedcode;
 
-import java.util.ArrayList;
-
-public class HashTable1 {
+public class HashTable {
 
     class Node {
         String key;
         int value;
         Node next;
-        Node(String key, int value) {
+        Node (String key, int value) {
             this.key = key;
             this.value = value;
         }
     }
 
-    private int size = 7;
     private Node[] dataMap;
 
-    public HashTable1() {
+    public HashTable(int size) {
         dataMap = new Node[size];
     }
 
@@ -65,19 +62,6 @@ public class HashTable1 {
             }
             temp = temp.next;
         }
-        return 0;
-    }
-    
-    public ArrayList keys() {
-        ArrayList keys = new ArrayList<>();
-        for(int i = 0; i < dataMap.length; i++) {
-            Node temp = dataMap[i];
-            while(temp != null) {
-                keys.add(temp.key);
-                temp = temp.next;
-            }
-        }
-
-        return keys;
+        return -1;
     }
 }
