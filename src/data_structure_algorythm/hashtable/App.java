@@ -11,6 +11,7 @@ public class App {
         hashTable1.printTable();
 
         System.out.println(hashTable1.get("hiep"));
+        System.out.println(hashTable1.keys());
 
     }
 }
