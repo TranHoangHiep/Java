@@ -1,5 +1,8 @@
 package data_structure_algorythm.hashtable.leedcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TwoSum {
 
     /*
@@ -12,18 +15,23 @@ public class TwoSum {
         Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
      */
     public static void main(String[] args) {
-        int[] nums = {2, 7, 11, 15};
-        int target = 9;
-        HashTable hashTable = new HashTable(nums.length);
-        for(int i = 1; i <= nums.length; i++) {
-            int temp = target - nums[i-1];
-            int value = hashTable.get(String.valueOf(temp));
-            if (value == -1) {
-                hashTable.set(String.valueOf(nums[i-1]), i - 1);
+        int[] nums = {2, 11, 7, 15};
+        int target = 17;
+        int[] result = twoSum(nums, target);
+        System.out.println(result[0] + " " + result[1]);
+        
+    }
+
+    public static int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for(int i = 0; i < nums.length; i++) {
+            int result = target - nums[i];
+            if (map.get(result) != null) {
+                return new int[]{map.get(result), i};
             } else {
-                System.out.println("Result: [" + (i-1) + ", " + value + "]");
-                return;
+                map.put(nums[i], i);
             }
         }
+        return null;
     }
 }
